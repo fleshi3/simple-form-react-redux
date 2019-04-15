@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {submitForm} from './actions/index';
-import ContactForm from './components/form';
 import FormFirstPage from './components/formFirstPage';
 import FormSecondPage from './components/formSecondPage';
 import FormThirdPage from './components/formThirdPage';
