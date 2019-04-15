@@ -1,0 +1,162 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  height: 100vh;
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px grey;
+  color: #121212;
+  position: relative;
+  margin: auto;
+  top: 25vh;
+  width: 600px;
+}
+
+.dataTitle {
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  span {
+          display: inline-block;
+          animation: wavey 1s infinite;
+          color: #e91e63;
+  }
+}
+
+@keyframes wavey {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.dataTitle span:nth-child(1) {
+  animation-delay: 0s;
+}
+.dataTitle span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.dataTitle span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.dataContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
+  text-align: left;
+  span {
+    color: #e91e63;
+    margin: 5px;
+    font-style: italic;
+  }
+}
+
+.formTitle {
+  font-family: 'Arvo', serif;
+  font-size: 30px;
+}
+
+.formContainer {
+  margin: 2rem;
+}
+
+.formButtons {
+  position: relative;
+  padding: 1rem;
+  button {
+    background: #e91e63;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px grey;
+    margin: 3px;
+  }
+}
+
+.formRadio {
+  label {
+    input {
+      appearance: radio;
+      background-color: green;
+      color: white;
+      border: #1d2021 1px solid;
+    }
+  }
+}
+
+.formTextContainer {
+  padding: 0.5rem;
+}
+
+.formTextArea {
+  padding: 5px;
+  textarea {
+    background: white;
+    color: black;
+    border: #1d2021 1px solid;
+    box-shadow: 0 0 3px grey;
+    outline: blue;
+    padding: 5px;
+    font-size: 14px;
+    &:focus {
+      border: #e91e63 3px solid;
+    }
+  }
+}
+
+.inputContainer,
+.selectContainer {
+  padding: 1rem;
+  padding-top: 0.5rem;
+  input,
+  select {
+    background: white;
+    color: black;
+    border: #1d2021 1px solid;
+    box-shadow: 0 0 3px grey;
+    padding: 5px;
+    &:focus {
+      border: #e91e63 3px solid;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding: 5px;
+  }
+}
